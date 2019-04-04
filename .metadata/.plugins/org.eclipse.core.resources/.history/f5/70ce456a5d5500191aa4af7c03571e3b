@@ -1,0 +1,10 @@
+package com_qzy_Tree;
+
+public class createTree {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

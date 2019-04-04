@@ -1,0 +1,27 @@
+package lexical_analyzer;
+
+class A{
+	
+}
+class B{
+	
+}
+class C{
+	
+}
+public class Main {
+
+	public static void main(String[] args) {
+		
+			Analyzer A = new Analyzer();
+			A.getText();
+			int a = 30;
+			
+			int b = ++a;
+			
+			
+			
+			
+	}
+
+}

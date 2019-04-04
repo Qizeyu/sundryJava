@@ -1,0 +1,1 @@
+nullpackage lexical_analyzer;public class Main {public static void main(String[] args) {Analyzer A = new Analyzer();A.getText();}}

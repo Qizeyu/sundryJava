@@ -1,0 +1,173 @@
+package com_qzy_Tree;
+
+public class createTree {
+
+	package training;
+
+	import java.util.Scanner;
+
+	public class com_qzy_binaryTree {
+
+		
+		
+		public static void main(String[] args) {
+			// TODO Auto-generated method stub
+
+			
+			Scanner in = new Scanner(System.in);
+			String str = in.nextLine();
+			Solution v = new Solution(str);
+			TreeNode t = new TreeNode();
+			v.create(t);
+			System.out.println("------pre------");
+			v.preorder(t);
+			System.out.println();
+			System.out.println("------in-------");
+			v.inorder(t);
+			System.out.println();
+			System.out.println("------post------");
+			v.postorder(t);
+			System.out.println();
+			TreeNode t2 = v.overturn(t);
+			System.out.println("------pre\t2------");
+			v.preorder(t2);
+			System.out.println();
+			System.out.println("------in\t2-------");
+			v.inorder(t2);
+			System.out.println();
+			System.out.println("------post\t2------");
+			v.postorder(t2);
+			
+			
+			
+			
+			
+			
+		}
+
+	}
+	class TreeNode{
+		private String var;
+		TreeNode left_child;
+		TreeNode right_child;
+		TreeNode(String var)
+		{
+			this.var = var;
+		}
+		TreeNode()
+		{
+			var = null;
+		}
+		public void setVar(String var)
+		{
+			this.var =var;
+		}
+		public String getVar()
+		{
+			return var;
+		}
+	}
+
+	class Solution{
+		
+		String str;
+		String[] str1;
+		int i;
+		
+		Solution(String str)
+		{
+			this.str = str;
+			str1 = str.split(" ");
+			i = 0;		
+		}
+		public void create(TreeNode t)       //创建树
+		{
+			String tmp = str1[i++];
+			if(tmp.equals("*"))
+			{
+				t.left_child = null;
+				t.right_child= null;
+				
+			}
+			else
+			{
+				t.setVar(tmp);
+				t.left_child = new TreeNode();
+				t.right_child= new TreeNode();
+				create(t.left_child);
+				create(t.right_child);
+			}
+		}
+		public static void preorder(TreeNode t)				//先序遍历
+		{
+			if(t==null)
+			{
+				return ;
+			}
+			else
+			{
+				if(t.getVar()!=null)
+				{
+					System.out.print(t.getVar()+" ");
+					
+				}
+				preorder(t.left_child);
+				preorder(t.right_child);
+			}
+			
+		}
+		public static void inorder(TreeNode t)				//中序遍历
+		{
+			if(t==null)
+			{
+				return ;
+			}
+			else
+			{
+				inorder(t.left_child);
+				
+				if(t.getVar()!=null)
+					System.out.print(t.getVar()+" ");
+				inorder(t.right_child);
+			}
+			
+		}
+		public static void postorder(TreeNode t)			//后序遍历
+		{
+			if(t==null)
+			{
+				return ;
+			}
+			else {
+				postorder(t.left_child);
+				postorder(t.right_child);
+				if(t.getVar()!=null)
+				{
+					System.out.print(t.getVar()+" ");
+				}
+			}
+			
+		}
+		public static TreeNode overturn(TreeNode t)      //反转二叉树
+		{
+			if(t==null)
+			{
+				return null;
+			}
+			else
+			{
+				t.left_child= overturn(t.left_child);
+				t.right_child = overturn(t.right_child);
+				
+				TreeNode tmp  = t.left_child;
+				t.left_child = t.right_child;
+				t.right_child = tmp;
+				return t;
+			}
+		}
+		
+		
+	}
+
+
+}

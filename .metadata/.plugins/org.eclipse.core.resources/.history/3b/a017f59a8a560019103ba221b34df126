@@ -1,0 +1,40 @@
+< package , keyword , _ >
+< lexical , ID , 0 >
+不能识别
+< analyzer , ID , 1 >
+< ; , _ , _ >
+< public , keyword , _ >
+< class , keyword , _ >
+< Main , ID , 2 >
+< { , _ , _ >
+不能识别
+< public , keyword , _ >
+< static , keyword , _ >
+< void , keyword , _ >
+< main , ID , 3 >
+< ( , _ , _ >
+< String , ID , 4 >
+< [ , _ , _ >
+< ] , _ , _ >
+< args , ID , 5 >
+< ) , _ , _ >
+< { , _ , _ >
+不能识别
+不能识别
+不能识别
+不能识别
+不能识别
+< System , ID , 6 >
+< . , _ , _ >
+< out , ID , 7 >
+< . , _ , _ >
+< println , ID , 8 >
+< ( , _ , _ >
+不能识别
+< hello , ID , 9 >
+不能识别
+< ) , _ , _ >
+< ; , _ , _ >
+不能识别
+< } , _ , _ >
+< } , _ , _ >
