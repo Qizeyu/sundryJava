@@ -12,14 +12,14 @@
 	T->FW  
 	W->*FW|0  
 	F->(E)|i  
-	#  
+	\#  
 	测试结果  
 	![结果1](https://i.loli.net/2019/05/21/5ce2d48bc8fc864354.jpg)   
 
 2.	E->E+T|T  
 	T->T*F|F  
 	F->(E)|i  
-	#  
+	\#  
 	输入句型  
 	#T+T*F+i#  
 	测试结果     
