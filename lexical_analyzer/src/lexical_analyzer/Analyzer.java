@@ -5,7 +5,11 @@ import java.io.BufferedWriter;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
-
+/**
+ * 
+ * @author qzy
+ *
+ */
 public class Analyzer {
 	
 		 String mainstring;
@@ -33,8 +37,10 @@ public class Analyzer {
 				while ((str = reader.readLine()) != null)					//读入并进行预处理
 				{
 					str = str.trim().replace(" +", " ").replaceAll("\\t+",  " ");
-					mainstring +=str;			
+					mainstring +=str;	
+//					System.out.println(mainstring);
 				}
+				System.out.println(mainstring);
 				judgement();
 				
 			} catch (Exception e) {

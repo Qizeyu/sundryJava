@@ -9,7 +9,7 @@ public class Table {
 	"volatile","break","continue","return","do","while",
 	"switch","case","default","try","cathc","throw","throws",
 	"import","package","boolean","byte","char","double","float",
-	"true","false","super","this","void","goto","const"};
+	"true","false","super","this","void","goto","const","int"};
 	
 	public static char[]  operator= {'+','-','*','/','=','>','<','!','%','|'};
 	public static char[]  Boundary= {',',';','{','}','(',')'};
