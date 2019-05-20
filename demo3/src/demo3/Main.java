@@ -27,12 +27,12 @@ public class Main {
     	   getFirstVT();		//求firstvt集合
     	   getLastVT();			//求lastvt集合
     	   getOPMatrix();
-    	   printOPMatrix1();
+    	 //  printOPMatrix1();
     	   
     	   if(isOPG())
     	   {
-    		   output(firstVT);
-    		   output(lastVT);
+    		  // output(firstVT);
+    		  // output(lastVT);
     		   System.out.println("是算符优先文法");
     		   printOPMatrix();
     		  
